@@ -117,18 +117,17 @@ body{
 .boletos{
     margin: 0 auto;
     width: 90%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
    
 }
 .boletos_general{
     background-color: #F7C10B;
     
-    border: 1px solid black;
-    margin-bottom: 10px;
+    
 }
 .boletos_general,.boletos_vip{
     box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.5);
-
+    
 }
 .boletos_general ul, .boletos_vip ul{
     list-style: none;
@@ -184,6 +183,57 @@ footer h2{
 .center{
     text-align: center;
 }
+/*LoginPage*/
+.container-login{
+   
+    display: flex;    
+    min-width: 90%;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.login{
+    
+    text-align: center;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    color: black;
+    min-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.5);
+}
+.button-login{
+    background-color: black;
+    color: white;
+    margin: 10px;
+    min-width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+.button-login a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .3s linear;
+}
+.button-login a:hover{
+    color: #F7C10B;
+}
+.button-login:hover{
+    padding: 20px;
+    
+}
+label{
+    font-size: 1rem;
+}
 /*Responsive*/
 @media(min-width: 1500px ){
     .navbar{
@@ -227,5 +277,8 @@ footer h2{
     .footer_copyright {
         text-align: center;
         margin-top: 10px;
+    }
+    .login{
+        min-width: 20%;
     }
 }
