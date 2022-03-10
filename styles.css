@@ -1,0 +1,166 @@
+:root{
+    --main-bg-color: #F7C10B;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: s;
+}
+/*Navbar*/
+#logo{
+    display: block;
+}
+.navbar{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+.navbar a:not(#logo):not(.menu){
+    display: none;
+}
+.navbar.show a:not(.menu){
+    float: none;
+    display: block !important;
+    text-align: left;
+    
+    
+}
+.navbar a:hover:not(.menu){
+    background-color: #F7C10B;
+}
+/*Contenido principal*/
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.bandas{
+    background-color: #F7C10B;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.5);
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card{
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    color: black;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.5);
+}
+
+
+.title{
+    font-size: 1.5rem;
+    margin: 10px;
+    line-height:1.5rem ;
+    text-align: center;
+}
+.img{
+    margin-top: 10px;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+/*Boletos*/
+.boletos{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10px;
+   
+}
+.boletos_general{
+    background-color: #F7C10B;
+    
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.boletos_general,.boletos_vip{
+    box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.5);
+
+}
+.boletos_general ul, .boletos_vip ul{
+    list-style: none;
+    font-size: 1rem;
+    
+}
+.boletos_precio{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.button{
+    background-color: black;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    
+}
+.boletos .button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+   
+}
+.boletos .button{
+    margin-bottom: 10px;
+}
+.boletos_vip{
+    border: 1px solid black;
+    background-color: #65DBF5;
+}
+
+/*Responsive*/
+@media(min-width: 1500px ){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar a:not(.menu){
+        display: flex !important;
+        
+    }
+    .menu{
+        display: none;
+    }
+    .cards{
+        display: flex;
+    }
+    .boletos{
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    .boletos_general,.boletos_vip{
+        width: 30%;
+    }
+}
