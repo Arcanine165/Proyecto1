@@ -242,6 +242,14 @@ label{
 }
 /*Responsive*/
 @media(min-width: 1200px ){
+    .container-login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login{
+        margin-top: 100px;
+    }
     .navbar{
         display: flex;
         justify-content: space-between;
