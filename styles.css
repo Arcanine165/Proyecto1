@@ -189,7 +189,16 @@ footer h2{
 .center{
     text-align: center;
 }
+
 /*LoginPage*/
+.register{
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+ }
+ .register:hover{
+     color: white;
+ }
 .container-login{
    
     display: flex;    
@@ -235,7 +244,7 @@ footer h2{
 }
 .button-login:hover{
     padding: 20px;
-    
+    cursor: pointer;
 }
 label{
     font-size: 1rem;
